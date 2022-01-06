@@ -1,0 +1,11 @@
+%[corpo humano]('training': '3')
+    @[parte_corpo]
+
+@[parte_corpo]
+    ~[boca original]
+
+~[boca original]('synonym': 'true')
+    bok
+    boka
+    boca
+    bocka

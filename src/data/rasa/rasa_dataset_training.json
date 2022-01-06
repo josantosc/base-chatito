@@ -1,0 +1,46 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [
+      { "synonyms": ["boca", "bocka", "boka"], "value": "boca original" }
+    ],
+    "common_examples": [
+      {
+        "text": "boca",
+        "intent": "corpo humano",
+        "entities": [
+          {
+            "end": 4,
+            "entity": "parte_corpo",
+            "start": 0,
+            "value": "boca original"
+          }
+        ]
+      },
+      {
+        "text": "bocka",
+        "intent": "corpo humano",
+        "entities": [
+          {
+            "end": 5,
+            "entity": "parte_corpo",
+            "start": 0,
+            "value": "boca original"
+          }
+        ]
+      },
+      {
+        "text": "boka",
+        "intent": "corpo humano",
+        "entities": [
+          {
+            "end": 4,
+            "entity": "parte_corpo",
+            "start": 0,
+            "value": "boca original"
+          }
+        ]
+      }
+    ]
+  }
+}
