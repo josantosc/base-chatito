@@ -2,43 +2,2555 @@
   "rasa_nlu_data": {
     "regex_features": [],
     "entity_synonyms": [
-      { "synonyms": ["boca", "bocka", "boka"], "value": "boca original" }
+      {
+        "synonyms": [
+          "recem nascida",
+          "rescem nascida",
+          "crianca",
+          "bb",
+          "filha",
+          "criança",
+          "minha filha",
+          "ressem nascido",
+          "meu filho",
+          "rescem nascido",
+          "recem nacido",
+          "filho",
+          "recem nascido",
+          "recem nacida",
+          "bebê",
+          "ressem nascida"
+        ],
+        "value": "bebe"
+      },
+      {
+        "synonyms": [
+          "impedramento",
+          "empedamento",
+          "empedrado",
+          "endurecimento",
+          "empedrar",
+          "endurecer",
+          "impedamento",
+          "endurecido"
+        ],
+        "value": "empedramento"
+      }
     ],
     "common_examples": [
       {
-        "text": "boca",
-        "intent": "corpo humano",
+        "text": "Oi, quantas vezes posso dar leite para a recem nascida",
+        "intent": "educacao_aleitamento_materno",
         "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          { "end": 54, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar peito para a rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "peito" },
+          { "end": 56, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer peito a crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "peito" },
+          { "end": 41, "entity": "bebe", "start": 34, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, como posso não deixar o leite impedramento?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "leite" },
           {
-            "end": 4,
-            "entity": "parte_corpo",
-            "start": 0,
-            "value": "boca original"
+            "end": 51,
+            "entity": "empedramento",
+            "start": 39,
+            "value": "empedramento"
           }
         ]
       },
       {
-        "text": "bocka",
-        "intent": "corpo humano",
+        "text": "Olá, quantas vezes posso dar peito a bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "peito" },
+          { "end": 39, "entity": "bebe", "start": 37, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito o filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 46, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar leite a criança",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 50, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, como devo evitar o empedamento do leite?",
+        "intent": "educacao_aleitamento_materno",
         "entities": [
           {
-            "end": 5,
-            "entity": "parte_corpo",
-            "start": 0,
-            "value": "boca original"
+            "end": 35,
+            "entity": "empedramento",
+            "start": 24,
+            "value": "empedramento"
+          },
+          { "end": 44, "entity": "alimento", "start": 39, "value": "leite" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer leite a filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 45, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, como devo evitar o empedrado do leite?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          {
+            "end": 39,
+            "entity": "empedramento",
+            "start": 30,
+            "value": "empedramento"
+          },
+          { "end": 48, "entity": "alimento", "start": 43, "value": "leite" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito o minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 52, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar peito para o rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "peito" },
+          { "end": 61, "entity": "bebe", "start": 47, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? como posso não deixar o peito endurecimento?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "peito" },
+          {
+            "end": 53,
+            "entity": "empedramento",
+            "start": 40,
+            "value": "empedramento"
           }
         ]
       },
       {
-        "text": "boka",
-        "intent": "corpo humano",
+        "text": "Oi, como posso não deixar o leite empedrar?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          {
+            "end": 42,
+            "entity": "empedramento",
+            "start": 34,
+            "value": "empedramento"
+          }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito a crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 48, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer leite para o ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 59, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar leite para a meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          { "end": 50, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar peito para o rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "peito" },
+          { "end": 61, "entity": "bebe", "start": 47, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer peito pra bebe",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 46, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer peito para o ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "peito" },
+          { "end": 52, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, como posso não deixar o peito empedamento?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          {
+            "end": 50,
+            "entity": "empedramento",
+            "start": 39,
+            "value": "empedramento"
+          }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar leite para o crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          { "end": 48, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer peito pro recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "peito" },
+          { "end": 47, "entity": "bebe", "start": 35, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito ao ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 56, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar peito pra minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 56, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer peito para a rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "peito" },
+          { "end": 53, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer leite pra filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "leite" },
+          { "end": 45, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer leite ao filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "leite" },
+          { "end": 39, "entity": "bebe", "start": 34, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, como devo evitar o impedramento do peito?",
+        "intent": "educacao_aleitamento_materno",
         "entities": [
           {
-            "end": 4,
-            "entity": "parte_corpo",
-            "start": 0,
-            "value": "boca original"
+            "end": 42,
+            "entity": "empedramento",
+            "start": 30,
+            "value": "empedramento"
+          },
+          { "end": 51, "entity": "alimento", "start": 46, "value": "peito" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar peito pro meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          { "end": 47, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer leite o recem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 53, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar leite para o recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          { "end": 54, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar peito pro recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          { "end": 51, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer peito a filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "peito" },
+          { "end": 44, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar peito pra crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          { "end": 45, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar leite para o filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 53, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar leite a crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          { "end": 43, "entity": "bebe", "start": 36, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer peito pra recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 55, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer leite para a minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "leite" },
+          { "end": 49, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar peito a bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 45, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar leite para o recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "leite" },
+          { "end": 54, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite pro ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 58, "entity": "bebe", "start": 44, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar peito o filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "peito" },
+          { "end": 47, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer leite pro bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 44, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer leite ao bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 43, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar peito pra ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          { "end": 52, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar leite para a recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 61, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer peito o rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "peito" },
+          { "end": 52, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar peito pra crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 52, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer leite pra bebê",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "leite" },
+          { "end": 45, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar peito para o filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          { "end": 46, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer peito a bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "peito" },
+          { "end": 35, "entity": "bebe", "start": 33, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar peito pra rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 59, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar leite pro crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "leite" },
+          { "end": 46, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer leite pra criança",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "leite" },
+          { "end": 42, "entity": "bebe", "start": 35, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito o rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 55, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, como posso não deixar o peito empedrado?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          {
+            "end": 43,
+            "entity": "empedramento",
+            "start": 34,
+            "value": "empedramento"
           }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer leite pro minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "leite" },
+          { "end": 52, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar leite pro recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 57, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite o bebê",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 46, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite ao recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 55, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar leite para o ressem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 62, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar leite ao filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "leite" },
+          { "end": 43, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer peito ao ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 55, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar leite pro bebe",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 49, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar leite a recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 55, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar leite o rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          { "end": 50, "entity": "bebe", "start": 36, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar leite ao recem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "leite" },
+          { "end": 55, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar peito o filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          { "end": 41, "entity": "bebe", "start": 36, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar leite o recem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "leite" },
+          { "end": 54, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer peito o bebe",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 44, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer peito a criança",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "peito" },
+          { "end": 45, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer peito pra bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "peito" },
+          { "end": 38, "entity": "bebe", "start": 36, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer peito para a ressem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "peito" },
+          { "end": 53, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer peito pra ressem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "peito" },
+          { "end": 55, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer leite para o minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "leite" },
+          { "end": 55, "entity": "bebe", "start": 44, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? como posso não deixar o peito endurecer?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "peito" },
+          {
+            "end": 49,
+            "entity": "empedramento",
+            "start": 40,
+            "value": "empedramento"
+          }
+        ]
+      },
+      {
+        "text": "Oi, como posso não deixar o peito impedamento?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          {
+            "end": 45,
+            "entity": "empedramento",
+            "start": 34,
+            "value": "empedramento"
+          }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar peito pra bebê",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 49, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, como posso não deixar o peito endurecer?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          {
+            "end": 43,
+            "entity": "empedramento",
+            "start": 34,
+            "value": "empedramento"
+          }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar leite para a rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 62, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer peito pro filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "peito" },
+          { "end": 46, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite pro meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 53, "entity": "bebe", "start": 44, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar leite a minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 54, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer peito ao criança",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "peito" },
+          { "end": 46, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer leite pra minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 53, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar leite pro crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          { "end": 45, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer peito para o bebê",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "peito" },
+          { "end": 42, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar leite pro rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 59, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer peito a recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "peito" },
+          { "end": 45, "entity": "bebe", "start": 33, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite a minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 53, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar leite ao bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "leite" },
+          { "end": 44, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar leite ao bebe",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "leite" },
+          { "end": 42, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer leite ao ressem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "leite" },
+          { "end": 49, "entity": "bebe", "start": 35, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar peito a filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 48, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito a recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 54, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite o recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 55, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar peito para a rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "peito" },
+          { "end": 61, "entity": "bebe", "start": 47, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar peito para o rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          { "end": 55, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar peito para a meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          { "end": 50, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar peito pro recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 57, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito pra rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 57, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer leite a bebe",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "leite" },
+          { "end": 43, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar leite ao bebê",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "leite" },
+          { "end": 42, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar leite pro filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 50, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar leite o rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 57, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito para o rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 60, "entity": "bebe", "start": 46, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite para o criança",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 54, "entity": "bebe", "start": 47, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer peito o ressem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "peito" },
+          { "end": 52, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito para o bebê",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 50, "entity": "bebe", "start": 46, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer leite para a filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "leite" },
+          { "end": 43, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar leite ao meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "leite" },
+          { "end": 47, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, como devo evitar o empedramento do peito?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          {
+            "end": 42,
+            "entity": "empedramento",
+            "start": 30,
+            "value": "empedramento"
+          },
+          { "end": 51, "entity": "alimento", "start": 46, "value": "peito" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar peito ao meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          { "end": 46, "entity": "bebe", "start": 37, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, como posso não deixar o leite empedamento?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          {
+            "end": 45,
+            "entity": "empedramento",
+            "start": 34,
+            "value": "empedramento"
+          }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar peito o recem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 56, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer peito pro recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 55, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar leite o filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          { "end": 41, "entity": "bebe", "start": 36, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer peito para o criança",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 52, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer peito o rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 54, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar leite pro ressem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          { "end": 52, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar leite pra recem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 58, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer leite o bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "leite" },
+          { "end": 40, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, como devo evitar o impedramento do peito?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          {
+            "end": 40,
+            "entity": "empedramento",
+            "start": 28,
+            "value": "empedramento"
+          },
+          { "end": 49, "entity": "alimento", "start": 44, "value": "peito" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar leite para o rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 62, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar peito a recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "peito" },
+          { "end": 55, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar peito o criança",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 50, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer leite pra bebe",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "leite" },
+          { "end": 40, "entity": "bebe", "start": 36, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer leite pro minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "leite" },
+          { "end": 47, "entity": "bebe", "start": 36, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite pra bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 46, "entity": "bebe", "start": 44, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, como posso não deixar o leite endurecimento?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          {
+            "end": 54,
+            "entity": "empedramento",
+            "start": 41,
+            "value": "empedramento"
+          }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer leite ao meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "leite" },
+          { "end": 48, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar peito pra bebe",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "peito" },
+          { "end": 43, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite pro rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 58, "entity": "bebe", "start": 44, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer peito pra recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 54, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer peito para o recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "peito" },
+          { "end": 56, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar peito para o bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "peito" },
+          { "end": 49, "entity": "bebe", "start": 47, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer leite a ressem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "leite" },
+          { "end": 47, "entity": "bebe", "start": 33, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar peito ao recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "peito" },
+          { "end": 56, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer leite pro bebe",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "leite" },
+          { "end": 44, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer leite a recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 52, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar peito pro bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          { "end": 40, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer peito ao recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 54, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito para o meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 55, "entity": "bebe", "start": 46, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer peito pro recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 54, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer leite ao recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "leite" },
+          { "end": 51, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar leite pro filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "leite" },
+          { "end": 44, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer leite para a recem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 58, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer peito o meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 49, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer leite ao meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "leite" },
+          { "end": 44, "entity": "bebe", "start": 35, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar leite para o bebe",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "leite" },
+          { "end": 50, "entity": "bebe", "start": 46, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer peito pro minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "peito" },
+          { "end": 47, "entity": "bebe", "start": 36, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar leite para o criança",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 55, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer leite para a ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "leite" },
+          { "end": 53, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar peito pro meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "peito" },
+          { "end": 48, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar peito ao filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          { "end": 42, "entity": "bebe", "start": 37, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer peito para o filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "peito" },
+          { "end": 48, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar peito pra recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "peito" },
+          { "end": 56, "entity": "bebe", "start": 44, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer leite pra bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "leite" },
+          { "end": 43, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, como devo evitar o empedramento do leite?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          {
+            "end": 40,
+            "entity": "empedramento",
+            "start": 28,
+            "value": "empedramento"
+          },
+          { "end": 49, "entity": "alimento", "start": 44, "value": "leite" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer peito pra filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "peito" },
+          { "end": 40, "entity": "bebe", "start": 35, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar leite para a rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 62, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar peito pro recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "peito" },
+          { "end": 51, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer peito ao meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 50, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar peito a filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 48, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer leite o crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "leite" },
+          { "end": 40, "entity": "bebe", "start": 33, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar leite para a recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 60, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar peito para a recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "peito" },
+          { "end": 55, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer leite para a recem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "leite" },
+          { "end": 56, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar peito a recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "peito" },
+          { "end": 49, "entity": "bebe", "start": 37, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar peito para a recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 60, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer peito pro recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 55, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer peito pra rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "peito" },
+          { "end": 54, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar leite pro recem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "leite" },
+          { "end": 52, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite pro bebê",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 48, "entity": "bebe", "start": 44, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito ao filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 47, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer peito pro bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 44, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer leite para o recem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 58, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer leite para a bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 47, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar leite para a criança",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "leite" },
+          { "end": 49, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer leite o filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "leite" },
+          { "end": 39, "entity": "bebe", "start": 34, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar peito para o recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "peito" },
+          { "end": 54, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer peito para o bebe",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 49, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito para o rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 60, "entity": "bebe", "start": 46, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito pro recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 55, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, como posso não deixar o peito impedramento?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          {
+            "end": 53,
+            "entity": "empedramento",
+            "start": 41,
+            "value": "empedramento"
+          }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar peito a criança",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          { "end": 43, "entity": "bebe", "start": 36, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer peito pro recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "peito" },
+          { "end": 48, "entity": "bebe", "start": 36, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar peito para a recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 61, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer peito ao minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "peito" },
+          { "end": 51, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar peito ao recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 57, "entity": "bebe", "start": 44, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito para a bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 48, "entity": "bebe", "start": 46, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar leite pra recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "leite" },
+          { "end": 55, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, como devo evitar o endurecido do leite?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          {
+            "end": 33,
+            "entity": "empedramento",
+            "start": 23,
+            "value": "empedramento"
+          },
+          { "end": 42, "entity": "alimento", "start": 37, "value": "leite" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer peito para a filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "peito" },
+          { "end": 48, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer peito a filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "peito" },
+          { "end": 44, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar leite pro ressem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "leite" },
+          { "end": 57, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer leite ao recem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 54, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar peito pra filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 50, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer leite ao filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 46, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar leite a criança",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          { "end": 43, "entity": "bebe", "start": 36, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer peito pra rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "peito" },
+          { "end": 49, "entity": "bebe", "start": 35, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer leite pra ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 56, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar leite ao recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          { "end": 50, "entity": "bebe", "start": 37, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar leite pra ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          { "end": 52, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer peito pra rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "peito" },
+          { "end": 55, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito para a minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 57, "entity": "bebe", "start": 46, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar leite para a minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 59, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito pra bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 45, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer peito para a recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 57, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite pra recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 56, "entity": "bebe", "start": 44, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer peito pra recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "peito" },
+          { "end": 53, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer peito ao recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "peito" },
+          { "end": 48, "entity": "bebe", "start": 35, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar peito para a crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "peito" },
+          { "end": 53, "entity": "bebe", "start": 46, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer peito ao crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "peito" },
+          { "end": 41, "entity": "bebe", "start": 34, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer peito a bebê",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 44, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, como posso não deixar o peito empedamento?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          {
+            "end": 52,
+            "entity": "empedramento",
+            "start": 41,
+            "value": "empedramento"
+          }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar leite para o recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 60, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer peito para o recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 57, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer leite pra bebe",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 46, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer leite pra bebê",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "leite" },
+          { "end": 40, "entity": "bebe", "start": 36, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar peito pro bebê",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "peito" },
+          { "end": 48, "entity": "bebe", "start": 44, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer leite pra recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "leite" },
+          { "end": 52, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite a criança",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 49, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? como devo evitar o empedrado do peito?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          {
+            "end": 38,
+            "entity": "empedramento",
+            "start": 29,
+            "value": "empedramento"
+          },
+          { "end": 47, "entity": "alimento", "start": 42, "value": "peito" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer peito pro recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 54, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar peito para o bebê",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 52, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar leite pra crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          { "end": 45, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer leite para a rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 59, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar leite pro ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "leite" },
+          { "end": 57, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer leite pro recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "leite" },
+          { "end": 53, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar leite pro recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          { "end": 50, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar leite para o bb",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "leite" },
+          { "end": 43, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer leite a meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "leite" },
+          { "end": 42, "entity": "bebe", "start": 33, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar peito o bebê",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 47, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, como devo evitar o impedramento do peito?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          {
+            "end": 36,
+            "entity": "empedramento",
+            "start": 24,
+            "value": "empedramento"
+          },
+          { "end": 45, "entity": "alimento", "start": 40, "value": "peito" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar leite pra filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "leite" },
+          { "end": 48, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer leite pra recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "leite" },
+          { "end": 48, "entity": "bebe", "start": 36, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar peito pro minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "peito" },
+          { "end": 55, "entity": "bebe", "start": 44, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, como devo evitar o empedamento do peito?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          {
+            "end": 35,
+            "entity": "empedramento",
+            "start": 24,
+            "value": "empedramento"
+          },
+          { "end": 44, "entity": "alimento", "start": 39, "value": "peito" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer peito o ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "peito" },
+          { "end": 47, "entity": "bebe", "start": 33, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar peito o recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 55, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer leite o meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "leite" },
+          { "end": 43, "entity": "bebe", "start": 34, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar peito para o ressem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 62, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar leite o filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 48, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer peito o ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 54, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer peito a recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "peito" },
+          { "end": 51, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer leite o filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "leite" },
+          { "end": 44, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar leite pra recem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "leite" },
+          { "end": 52, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite para o recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 59, "entity": "bebe", "start": 47, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar leite pro minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 56, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer peito o crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "peito" },
+          { "end": 46, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer leite ao meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 50, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer peito pro filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "peito" },
+          { "end": 40, "entity": "bebe", "start": 35, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar peito para a minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 59, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer leite para o recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "leite" },
+          { "end": 56, "entity": "bebe", "start": 44, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar leite a minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "leite" },
+          { "end": 48, "entity": "bebe", "start": 37, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar peito para o ressem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "peito" },
+          { "end": 56, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer leite para o filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "leite" },
+          { "end": 44, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar peito para a bebê",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          { "end": 45, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, como posso não deixar o leite empedrar?",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "leite" },
+          {
+            "end": 47,
+            "entity": "empedramento",
+            "start": 39,
+            "value": "empedramento"
+          }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer peito pra ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 56, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer leite ao filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "leite" },
+          { "end": 44, "entity": "bebe", "start": 39, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer leite pro meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 51, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer peito pro rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "peito" },
+          { "end": 54, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer leite pra ressem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "leite" },
+          { "end": 49, "entity": "bebe", "start": 35, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer leite a recem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 53, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar leite ao recem nacido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "leite" },
+          { "end": 54, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite pro criança",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 51, "entity": "bebe", "start": 44, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer leite a criança",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 47, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar leite para o meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "leite" },
+          { "end": 55, "entity": "bebe", "start": 46, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer peito pro recem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "peito" },
+          { "end": 48, "entity": "bebe", "start": 35, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer leite ao ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "leite" },
+          { "end": 48, "entity": "bebe", "start": 34, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quantas vezes posso dar peito pra rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 33, "entity": "alimento", "start": 28, "value": "peito" },
+          { "end": 52, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar peito a crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 50, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quantas vezes posso dar leite ao criança",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 38, "entity": "alimento", "start": 33, "value": "leite" },
+          { "end": 49, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer peito o recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "peito" },
+          { "end": 50, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar peito pra meu filho",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 54, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Oi, quando devo oferecer leite para o recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 30, "entity": "alimento", "start": 25, "value": "leite" },
+          { "end": 50, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite para o filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 52, "entity": "bebe", "start": 47, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar leite para o ressem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 62, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer leite ao recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "leite" },
+          { "end": 47, "entity": "bebe", "start": 35, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quantas vezes posso dar leite o minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 54, "entity": "bebe", "start": 43, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar peito pra recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "peito" },
+          { "end": 57, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer leite ao rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 55, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer leite pra recem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "leite" },
+          { "end": 54, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quando devo oferecer peito pra crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 49, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar peito o minha filha",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "peito" },
+          { "end": 48, "entity": "bebe", "start": 37, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar leite para o crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "leite" },
+          { "end": 49, "entity": "bebe", "start": 42, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer leite o rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "leite" },
+          { "end": 52, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Bom dia, quando devo oferecer peito pra ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 35, "entity": "alimento", "start": 30, "value": "peito" },
+          { "end": 54, "entity": "bebe", "start": 40, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer leite ao ressem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 55, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa tarde, quantas vezes posso dar leite para o recem nacida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 40, "entity": "alimento", "start": 35, "value": "leite" },
+          { "end": 60, "entity": "bebe", "start": 48, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quantas vezes posso dar peito ao bebe",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 34, "entity": "alimento", "start": 29, "value": "peito" },
+          { "end": 42, "entity": "bebe", "start": 38, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer leite pra rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "leite" },
+          { "end": 55, "entity": "bebe", "start": 41, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer peito para o rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "peito" },
+          { "end": 59, "entity": "bebe", "start": 45, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quantas vezes posso dar leite pro ressem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 39, "entity": "alimento", "start": 34, "value": "leite" },
+          { "end": 58, "entity": "bebe", "start": 44, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Olá, quando devo oferecer peito o rescem nascida",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 31, "entity": "alimento", "start": 26, "value": "peito" },
+          { "end": 48, "entity": "bebe", "start": 34, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Tudo bem? quando devo oferecer peito para a crianca",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 36, "entity": "alimento", "start": 31, "value": "peito" },
+          { "end": 51, "entity": "bebe", "start": 44, "value": "bebe" }
+        ]
+      },
+      {
+        "text": "Boa noite, quando devo oferecer leite para a rescem nascido",
+        "intent": "educacao_aleitamento_materno",
+        "entities": [
+          { "end": 37, "entity": "alimento", "start": 32, "value": "leite" },
+          { "end": 59, "entity": "bebe", "start": 45, "value": "bebe" }
         ]
       }
     ]
