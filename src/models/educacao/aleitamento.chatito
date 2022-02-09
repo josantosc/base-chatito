@@ -1,90 +1,90 @@
-%[educacao_aleitamento_materno]('training': '300')
-    ~[saudacao] ~[perguntas] ~[complemento] @[bebe]
-    ~[saudacao] ~[perguntas_tipo_2]
+// %[educacao_aleitamento_materno]('training': '300')
+//     ~[saudacao] ~[perguntas] ~[complemento] @[bebe]
+//     ~[saudacao] ~[perguntas_tipo_2]
 
 
-# Frazes
-~[complemento]
-    para o
-    para a
-    pro
-    pra
-    o
-    a
-    ao
+// # Frases
 
-~[saudacao]
-    Oi, 
-    Olá, 
-    Boa tarde, 
-    Boa noite, 
-    Tudo bem?
-    Bom dia,
+// ~[saudacao]
+//     Oi, 
+//     Olá, 
+//     Boa tarde, 
+//     Boa noite, 
+//     Tudo bem?
+//     Bom dia,
 
-~[perguntas]
-    quando devo oferecer @[alimento]
-    quantas vezes posso dar @[alimento]
+// ~[perguntas]
+//     quando devo oferecer @[alimento]
+//     quantas vezes posso dar @[alimento]
 
-~[perguntas_tipo_2]
-    como devo evitar o @[empedramento] do @[alimento]?
-    como posso não deixar o @[alimento] @[empedramento]?
+// ~[perguntas_tipo_2]
+//     como devo evitar o @[empedramento] do @[alimento]?
+//     como posso não deixar o @[alimento] @[empedramento]?
 
+// ~[complemento]
+//     para o
+//     para a
+//     pro
+//     pra
+//     o
+//     a
+//     ao
 
-# Entidade de sinonimos
-@[alimento]
-    ~[alimento] 
+// # Entidade de sinonimos
+// @[alimento]
+//     ~[alimento] 
 
-@[problema_amamentacao]
-    ~[problema]
+// @[problema_amamentacao]
+//     ~[problema]
 
-@[empedramento]
-    ~[empedramento]
+// @[empedramento]
+//     ~[empedramento]
 
-// @[informacao_amamentacao]
+// // @[informacao_amamentacao]
 
-@[bebe]
-    ~[bebe]
-
-
-# Sinonimos
-~[alimento]('synonym': 'true')
-    peito
-    leite
-
-~[problema]('synonym': 'true')
-    não mama
-    não quer mamar
-    não consegue mamar
+// @[bebe]
+//     ~[bebe]
 
 
-~[bebe]('synonym': 'true')
-    bebê
-    bebe
-    bb
-    recem nascido
-    recem nacido
-    recem nascida
-    recem nacida
-    rescem nascida
-    ressem nascida
-    ressem nascido
-    rescem nascido
-    criança
-    crianca
-    meu filho
-    filho
-    filha
-    minha filha
+// # Sinonimos
+// ~[alimento]('synonym': 'true')
+//     peito
+//     leite
 
-~[empedramento]('synonym': 'true')
-    empedramento
-    empedamento
-    impedramento
-    impedamento
-    endurecimento
-    empedrar
-    endurecer
-    empedrado
-    endurecido
+// ~[problema]('synonym': 'true')
+//     não mama
+//     não quer mamar
+//     não consegue mamar
+
+
+// ~[bebe]('synonym': 'true')
+//     bebê
+//     bebe
+//     bb
+//     recem nascido
+//     recem nacido
+//     recem nascida
+//     recem nacida
+//     rescem nascida
+//     ressem nascida
+//     ressem nascido
+//     rescem nascido
+//     criança
+//     crianca
+//     meu filho
+//     filho
+//     filha
+//     minha filha
+
+// ~[empedramento]('synonym': 'true')
+//     empedramento
+//     empedamento
+//     impedramento
+//     impedamento
+//     endurecimento
+//     empedrar
+//     endurecer
+//     empedrado
+//     endurecido
 
 
