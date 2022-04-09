@@ -1,0 +1,106 @@
+// %[problema_bb_pegada]('training': '500')
+//     ~[saudacao] ~[problemas_bb_pegada]
+//     ~[problemas_bb_pegada]
+
+// //     ~[saudacao] ~[perguntas_tipo_2]
+
+
+// // # Frases
+
+// ~[saudacao]
+//     Oi, 
+//     Olá, 
+//     Boa tarde, 
+//     Boa noite, 
+//     Tudo bem?
+//     Bom dia
+
+// ~[problemas_bb_pegada]
+//     @[meu_minha] @[bebe] está com dificuldade de pegar o @[seios]
+//     @[meu_minha] @[bebe] não pega meu @[seios]
+
+// // # Entidade de sinonimos
+// @[meu_minha]
+//     ~[meu_minha]
+// @[dificuldade_bb]
+//     ~[dificuldade_bb]
+// @[seios]
+//     ~[seios]    
+// @[problema_mae]
+//     ~[problema_mae]
+// @[problema_mae_mastite]
+//     ~[problema_mae_mastite]
+// @[problema_mae_pus]
+//     ~[problema_mae_pus]
+// @[problema_mae_cor_mama]
+//     ~[problema_mae_cor_mama]
+// @[problema_mae_dor]
+//     ~[problema_mae_dor]
+// @[bebe]
+//     ~[bebe]
+
+// ~[dificuldade_bb]
+//     mamar
+//     sugar
+//     tomar
+
+// ~[meu_minha]('synonym': 'true')
+//     meu
+//     minha
+//     nossa
+//     nosso
+
+// ~[seios]('synonym': 'true')
+//     seios
+//     peito
+//     mama
+// ~[problema_mae_dor]('synonym': 'true')
+//     doendo
+//     ardendo
+//     mastite
+
+// ~[problema_mae_mastite]('synonym': 'true')
+//     mastite
+//     empedramento
+//     empedamento
+//     impedramento
+//     impedamento
+//     endurecimento
+//     empedrar
+//     endurecer
+//     empedrado
+//     endurecido
+
+// ~[bebe]('synonym': 'true')
+//     bebê
+//     bebe
+//     bb
+//     recem nascido
+//     recem nacido
+//     recem nascida
+//     recem nacida
+//     rescem nascida
+//     ressem nascida
+//     ressem nascido
+//     rescem nascido
+//     criança
+//     crianca
+//     meu filho
+//     filho
+//     filha
+//     minha filha
+
+// ~[problema_mae_pus]('synonym': 'true')
+//     pus
+//     sangue
+//     secreção
+// ~[problema_mae_cor_mama]
+//     vermelha
+//     esvermelhada
+//     roxa
+//     vermelinha
+//     vermelhidão
+//     roxinha
+//     preta
+
+

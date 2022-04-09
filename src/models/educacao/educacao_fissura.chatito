@@ -1,0 +1,78 @@
+%[educacao_fissura]('training': '800')
+    ~[saudacao] ~[fissura]
+    ~[fissura]
+// # Frases
+
+~[saudacao]
+    Oi, 
+    Olá, 
+    Boa tarde, 
+    Boa noite, 
+    Tudo bem ?
+    Bom dia,
+
+~[fissura]
+    @[meu_minha] @[seios] está cheia, com dor e @[fisura]
+    @[bebe] não está mamando @[seios] direito e o outro está @[fisura]
+    sensibilidade nos @[seios] e @[fisura]
+    estou com @[seios] @[fisura] e dolorido ao mamar
+    estou com @[seios] @[fisura]
+    estou com o bico do @[seios] @[fisura]
+    estou com @[fisura] nas mamas
+    o bico do meu @[seios] está @[fisura]
+    o bico do meu @[seios] está @[fisura]
+    @[meu_minha] @[seios] dói quando amamento
+
+// # Entidade de sinonimos
+@[meu_minha]
+    ~[meu_minha_synonym]
+@[dificuldade_bb]
+    ~[dificuldade_bb_synonym]
+@[seios]
+    ~[seios]
+@[nodulo_caroco]
+    ~[nodulo_caroco_synonym]
+@[bebe]
+    ~[bebe_synonym]
+@[fisura]
+    ~[fissura_synonym]
+
+~[meu_minha_synonym]('synonym': 'true')
+    meu
+    minha
+
+~[seios_synonym]('synonym': 'true')
+    seios
+    peito
+    mama
+
+~[nodulo_caroco_synonym]
+    nódulo
+    caroço
+    ponto
+
+~[bebe_synonym]('synonym': 'true')
+    bebê
+    bebe
+    bb
+    recem nascido
+    recem nacido
+    recem nascida
+    recem nacida
+    rescem nascida
+    ressem nascida
+    ressem nascido
+    rescem nascido
+    criança
+    crianca
+    meu filho
+    filho
+    filha
+    minha filha
+~[fissura_synonym]('synonym': 'true')
+    ferido
+    rachado
+    machucado
+    fissura
+    ferimentos
+    microfissuras

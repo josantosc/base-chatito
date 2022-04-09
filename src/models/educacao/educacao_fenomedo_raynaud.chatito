@@ -1,0 +1,65 @@
+%[educacao_fenomedo_raynaud]('training': '609')
+    ~[saudacao] ~[fenomedo_raynaud]
+    ~[fenomedo_raynaud]
+// # Frases
+
+~[saudacao]
+    Oi, 
+    Olá, 
+    Boa tarde, 
+    Boa noite, 
+    Tudo bem ?
+    Bom dia,
+
+~[fenomedo_raynaud]
+    @[meu_minha] @[seios] está doendo
+    quando amamento, minhas @[seios] doem
+    sinto fisgadas em minhas @[seios]
+    @[meu_minha] @[seios] estão vermelhas e doem mesmo quando não amamento
+    @[meu_minha] @[seios] estão doendo muito
+    @[meu_minha] @[seios] doem o tempo todo
+    Quando o @[bebe] termina de mamar minhas @[seios] doem
+    @[meu_minha] @[seios] está pálida e sinto queimações
+
+// # Entidade de sinonimos
+@[meu_minha]
+    ~[meu_minha_synonym]
+@[seios]
+    ~[seios_synonym]
+@[nodulo_caroco]
+    ~[nodulo_caroco_synonym]
+@[bebe]
+    ~[bebe_synonym]
+
+~[meu_minha_synonym]('synonym': 'true')
+    meu
+    minha
+
+~[seios_synonym]('synonym': 'true')
+    seios
+    peito
+    mama
+
+~[nodulo_caroco_synonym]
+    nódulo
+    caroço
+    ponto
+
+~[bebe_synonym]('synonym': 'true')
+    bebê
+    bebe
+    bb
+    recem nascido
+    recem nacido
+    recem nascida
+    recem nacida
+    rescem nascida
+    ressem nascida
+    ressem nascido
+    rescem nascido
+    criança
+    crianca
+    meu filho
+    filho
+    filha
+    minha filha

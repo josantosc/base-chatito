@@ -1,0 +1,83 @@
+%[educacao_ingurgitamento]('training': '497')
+    ~[saudacao] ~[ingurgitamento]
+    ~[ingurgitamento]
+// # Frases
+
+~[saudacao]
+    Oi, 
+    Olá, 
+    Boa tarde, 
+    Boa noite, 
+    Tudo bem ?
+    Bom dia,
+
+~[ingurgitamento]
+    @[meu_minha] @[seios] estão inchados e edemaciados
+    @[meu_minha] @[seios] estão inchados e vermelhos
+    estou com dor na @[seios], ~[empedramento] e @[bebe] não mama
+    estou com dor nas @[seios] e elas estão pesadas
+    @[meu_minha] @[seios] está cheia e com dor
+    estou com a @[seios] ingurgitada
+    estou com muita dor nas @[seios] e com as @[seios] muito cheias
+    @[meu_minha] @[seios] está muito duro e não consigo dar de mamar
+    estou com a @[seios] cheia, com leite ~[empedramento]
+    @[meu_minha] @[seios] ~[empedramento]
+
+~[empedramento]
+    empedrou
+    empedramento
+    empredado
+
+// # Entidade de sinonimos
+@[meu_minha]
+    ~[meu_minha_synonym]
+@[dificuldade_bb]
+    ~[dificuldade_bb_synonym]
+@[seios]
+    ~[seios]
+@[nodulo_caroco]
+    ~[nodulo_caroco_synonym]
+@[bebe]
+    ~[bebe_synonym]
+@[fisura]
+    ~[fissura_synonym]
+
+~[meu_minha_synonym]('synonym': 'true')
+    meu
+    minha
+
+~[seios_synonym]('synonym': 'true')
+    seios
+    peito
+    mama
+
+~[nodulo_caroco_synonym]
+    nódulo
+    caroço
+    ponto
+
+~[bebe_synonym]('synonym': 'true')
+    bebê
+    bebe
+    bb
+    recem nascido
+    recem nacido
+    recem nascida
+    recem nacida
+    rescem nascida
+    ressem nascida
+    ressem nascido
+    rescem nascido
+    criança
+    crianca
+    meu filho
+    filho
+    filha
+    minha filha
+~[fissura_synonym]('synonym': 'true')
+    ferido
+    rachado
+    machucado
+    fissura
+    ferimentos
+    microfissuras

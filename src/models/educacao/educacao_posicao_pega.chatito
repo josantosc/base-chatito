@@ -1,0 +1,97 @@
+%[educacao_posicao_pega]('training': '800')
+    ~[saudacao] ~[posicao_pega]
+    ~[posicao_pega]
+// # Frases
+
+~[saudacao]
+    Oi, 
+    Olá, 
+    Boa tarde, 
+    Boa noite, 
+    Tudo bem ?
+    Bom dia,
+
+~[posicao_pega]
+    ~[meu_minha] @[bebe] está com dificuldade para ~[alimentar]
+    ~[meu_minha] @[bebe] não estava conseguindo realizar a pega fiz mamoplastia
+    ~[meu_minha] @[bebe] está com dificuldade de pegar o bico
+    dificuldade em sugar o peito direito
+    @[bebe] com dificuldade de pegar o peito
+    ~[meu_minha] @[bebe] não quer mamar direito
+    Dificuldade na pega
+    Estou com dificuldade na amamentação
+    Estou com dificuldades na pega
+    ~[meu_minha] bebê não @[seios]
+
+
+
+~[problema_mastite]
+    inflamada
+    inchada
+    doendo
+    infecionada
+
+~[empedramento]
+    empedrou
+    empedramento
+    empredado
+
+~[meu_minha]
+    meu
+    minha
+
+~[fraco_suficiente]
+    fraco
+    suficiente
+
+~[alimentar]
+    amamentar
+    dar leite
+// # Entidade de sinonimos
+@[dificuldade_bb]
+    ~[dificuldade_bb_synonym]
+@[seios]
+    ~[seios]
+@[nodulo_caroco]
+    ~[nodulo_caroco_synonym]
+@[bebe]
+    ~[bebe_synonym]
+@[fisura]
+    ~[fissura_synonym]
+
+
+~[seios_synonym]('synonym': 'true')
+    seios
+    peito
+    mama
+
+~[nodulo_caroco_synonym]
+    nódulo
+    caroço
+    ponto
+
+~[bebe_synonym]('synonym': 'true')
+    bebê
+    bebe
+    bb
+    recem nascido
+    recem nacido
+    recem nascida
+    recem nacida
+    rescem nascida
+    ressem nascida
+    ressem nascido
+    rescem nascido
+    criança
+    crianca
+    meu filho
+    filho
+    filha
+    minha filha
+~[fissura_synonym]('synonym': 'true')
+    ferido
+    rachado
+    machucado
+    fissura
+    ferimentos
+    microfissuras

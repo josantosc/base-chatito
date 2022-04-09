@@ -1,0 +1,95 @@
+%[educacao_mastite]('training': '441')
+    ~[saudacao] ~[mastite]
+    ~[mastite]
+// # Frases
+
+~[saudacao]
+    Oi, 
+    Olá, 
+    Boa tarde, 
+    Boa noite, 
+    Tudo bem ?
+    Bom dia,
+
+~[mastite]
+    ~[meu_minha] @[seios] está ~[problema_mastite] muito!
+    não consigo ~[alimentar] porque minha @[seios] está ~[problema_mastite]
+    estou com mastite
+    ~[meu_minha] @[seios] está ~[problema_mastite] e com pus
+    ~[meu_minha] @[seios] está doendo e vermelho
+    acho que meu @[seios] está ~[problema_mastite]
+    ~[meu_minha] @[seios] está ~[problema_mastite], tem pus e dei febre
+    ~[meu_minha] @[seios] está ~[problema_mastite] e estou com febre
+    ~[meu_minha] @[seios] está ~[problema_mastite] e estou com febre
+    ~[meu_minha] @[seios] está ~[problema_mastite] e estou com febre
+
+~[problema_mastite]
+    inflamada
+    inchada
+    doendo
+    infecionada
+
+~[empedramento]
+    empedrou
+    empedramento
+    empredado
+
+~[meu_minha]
+    meu
+    minha
+
+~[fraco_suficiente]
+    fraco
+    suficiente
+
+~[alimentar]
+    amamentar
+    dar leite
+// # Entidade de sinonimos
+@[dificuldade_bb]
+    ~[dificuldade_bb_synonym]
+@[seios]
+    ~[seios]
+@[nodulo_caroco]
+    ~[nodulo_caroco_synonym]
+@[bebe]
+    ~[bebe_synonym]
+@[fisura]
+    ~[fissura_synonym]
+
+
+~[seios_synonym]('synonym': 'true')
+    seios
+    peito
+    mama
+
+~[nodulo_caroco_synonym]
+    nódulo
+    caroço
+    ponto
+
+~[bebe_synonym]('synonym': 'true')
+    bebê
+    bebe
+    bb
+    recem nascido
+    recem nacido
+    recem nascida
+    recem nacida
+    rescem nascida
+    ressem nascida
+    ressem nascido
+    rescem nascido
+    criança
+    crianca
+    meu filho
+    filho
+    filha
+    minha filha
+~[fissura_synonym]('synonym': 'true')
+    ferido
+    rachado
+    machucado
+    fissura
+    ferimentos
+    microfissuras

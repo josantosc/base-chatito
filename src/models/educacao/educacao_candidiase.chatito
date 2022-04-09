@@ -1,0 +1,66 @@
+%[educacao_candidiase]('training': '707')
+    ~[saudacao] ~[candidiase]
+    ~[candidiase]
+// # Frases
+
+~[saudacao]
+    Oi, 
+    Olá, 
+    Boa tarde, 
+    Boa noite, 
+    Tudo bem ?
+    Bom dia,
+
+~[candidiase]
+    @[meu_minha] @[seios] está coçando
+    O bico do meu @[seios] está coçando
+    @[meu_minha] @[seios] está ardendo
+    sinto agulhadas na minha @[seios] quando amamento
+    tem uma placas brancas que coçam na minha @[seios]
+    @[meu_minha] @[bebe] está com placas brancas na boca
+    @[meu_minha] @[seios] está vermelha e coçando
+    @[meu_minha] aréola está espinhando quando o @[bebe] mama
+    @[meu_minha] @[seios] está tipo espinhando
+
+// # Entidade de sinonimos
+@[meu_minha]
+    ~[meu_minha_synonym]
+@[seios]
+    ~[seios_synonym]
+@[nodulo_caroco]
+    ~[nodulo_caroco_synonym]
+@[bebe]
+    ~[bebe_synonym]
+
+~[meu_minha_synonym]('synonym': 'true')
+    meu
+    minha
+
+~[seios_synonym]('synonym': 'true')
+    seios
+    peito
+    mama
+
+~[nodulo_caroco_synonym]
+    nódulo
+    caroço
+    ponto
+
+~[bebe_synonym]('synonym': 'true')
+    bebê
+    bebe
+    bb
+    recem nascido
+    recem nacido
+    recem nascida
+    recem nacida
+    rescem nascida
+    ressem nascida
+    ressem nascido
+    rescem nascido
+    criança
+    crianca
+    meu filho
+    filho
+    filha
+    minha filha

@@ -1,0 +1,88 @@
+%[educacao_inseguranca_materna]('training': '800')
+    ~[saudacao] ~[inseguranca_materna]
+    ~[inseguranca_materna]
+// # Frases
+
+~[saudacao]
+    Oi, 
+    Olá, 
+    Boa tarde, 
+    Boa noite, 
+    Tudo bem ?
+    Bom dia,
+
+~[inseguranca_materna]
+    estou com pouco leite
+    quero ~[alimentar] meu @[bebe] e não estou conseguindo
+    estou com dificuldade de ~[alimentar]
+    ~[meu_minha] leite está pouco e não estou conseguindo ~[alimentar]
+    ~[meu_minha] @[bebe] está perdendo peso
+    eu não consigo ~[alimentar]
+    ~[meu_minha] leite é ~[fraco_suficiente]
+    não tenho leite ~[fraco_suficiente]
+    ~[meu_minha] leite não sustenta meu @[bebe]
+
+~[empedramento]
+    empedrou
+    empedramento
+    empredado
+
+~[meu_minha]
+    meu
+    minha
+
+~[fraco_suficiente]
+    fraco
+    suficiente
+
+~[alimentar]
+    amamentar
+    dar leite
+// # Entidade de sinonimos
+@[dificuldade_bb]
+    ~[dificuldade_bb_synonym]
+@[seios]
+    ~[seios]
+@[nodulo_caroco]
+    ~[nodulo_caroco_synonym]
+@[bebe]
+    ~[bebe_synonym]
+@[fisura]
+    ~[fissura_synonym]
+
+
+~[seios_synonym]('synonym': 'true')
+    seios
+    peito
+    mama
+
+~[nodulo_caroco_synonym]
+    nódulo
+    caroço
+    ponto
+
+~[bebe_synonym]('synonym': 'true')
+    bebê
+    bebe
+    bb
+    recem nascido
+    recem nacido
+    recem nascida
+    recem nacida
+    rescem nascida
+    ressem nascida
+    ressem nascido
+    rescem nascido
+    criança
+    crianca
+    meu filho
+    filho
+    filha
+    minha filha
+~[fissura_synonym]('synonym': 'true')
+    ferido
+    rachado
+    machucado
+    fissura
+    ferimentos
+    microfissuras
